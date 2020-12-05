@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const starSearch = require('../services/starSearch');
 
 const Star = mongoose.model('stars');
 

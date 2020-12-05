@@ -13,6 +13,7 @@ mongoose.connect(keys.mongoURI, {
 });
 
 require('./routes/getStar')(app);
+require('./routes/getMovie')(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));

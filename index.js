@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const keys = require('./config/keys');
 
 require('./models/Star');
+require('./models/Movie');
 
 const app = express();
 

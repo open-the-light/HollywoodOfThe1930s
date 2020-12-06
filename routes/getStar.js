@@ -15,7 +15,6 @@ module.exports = (app) => {
 
   app.get('/api/get_all_stars', async (req, res) => {
     const stars = await Star.find();
-    console.log(stars[0].lastName);
     res.send(stars.sort((a, b) => (a.lastName > b.lastName ? 1 : -1)));
   });
 

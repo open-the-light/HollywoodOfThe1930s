@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Homepage from './components/Homepage';
 import Actors from './components/Actors';
 import StarWiki from './components/StarWiki';
+import MovieWiki from './components/MovieWiki';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route component={Homepage} path='/' exact />
           <Route component={Actors} path='/actor_list' exact />
           <Route component={StarWiki} path='/actors' />
+          <Route component={MovieWiki} path='/movies' />
         </div>
       </main>
     </BrowserRouter>

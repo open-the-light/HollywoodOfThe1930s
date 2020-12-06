@@ -12,7 +12,7 @@ function App() {
       <main>
         <div>
           <Route component={Homepage} path='/' exact />
-          <Route component={Actors} path='/actors_list' exact />
+          <Route component={Actors} path='/actor_list' exact />
           <Route component={StarWiki} path='/actors' />
         </div>
       </main>

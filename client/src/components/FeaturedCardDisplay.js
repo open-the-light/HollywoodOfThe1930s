@@ -8,7 +8,7 @@ const FeaturedCardDisplay = () => {
     const getList = async () => {
       const { data } = await axios.get('/api/get_featured_list');
       const items = data.map((d) => {
-        return <FeaturedCard data={d} />;
+        return <FeaturedCard data={d} key={d.id} />;
       });
       setList(items);
     };

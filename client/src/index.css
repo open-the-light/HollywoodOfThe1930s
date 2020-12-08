@@ -1,0 +1,31 @@
+.log-in-tile {
+  background-color: #363636;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  height: 40vh;
+  width: 30vh;
+}
+
+.log-in-text {
+  color: whitesmoke;
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: large;
+  text-align: center;
+  width: 100%;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.log-in-buttons {
+  padding: 10px 10px;
+  margin: 10px 32px;
+  width: 160px;
+}

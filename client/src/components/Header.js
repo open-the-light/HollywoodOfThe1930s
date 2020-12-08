@@ -20,6 +20,11 @@ const Header = () => {
             Actors
           </Link>
         </div>
+        <div className='navbar-end'>
+          <Link to='/login' className='navbar-item'>
+            Log In
+          </Link>
+        </div>
       </div>
     </nav>
   );

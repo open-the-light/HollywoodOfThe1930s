@@ -1,10 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import FeaturedCard from './FeaturedCard';
-import FeaturedCardDisplay from './FeaturedCardDisplay';
+import React from 'react';
 import ActorList from './ActorList';
-import ActorCard from './ActorCard';
 
 const Actors = () => {
   return (

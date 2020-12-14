@@ -9,7 +9,6 @@ const FeaturedMovieCard = ({ id }) => {
       const { data } = await axios.get('/api/get_movie_by_id', {
         params: { id: id },
       });
-      console.log(data);
       setMovie(data);
     };
     getMovie();

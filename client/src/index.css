@@ -29,3 +29,11 @@
   margin: 10px 32px;
   width: 160px;
 }
+
+.movie-container {
+  width: 500px;
+  max-height: 80vh;
+  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

@@ -14,11 +14,21 @@ module.exports = (app) => {
         query: 'Jack Reacher',
       },
     });
-    console.log(data.data.results[0]);
+    console.log(data);
   });
 
   app.get('/api/get_movie_by_id', async (req, res) => {
     const data = await Movie.findOne({ id: req.query.id });
     res.send(data);
+  });
+
+  app.get('/api/get_movie_by_title', async (req, res) => {
+    const data = await axios.get(movieEndPoint, {
+      params: {
+        api_key: keys.tmdb_key,
+        query: req.query.title,
+      },
+    });
+    res.send(data.data.results[0]);
   });
 };

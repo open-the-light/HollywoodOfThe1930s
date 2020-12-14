@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ActorCard from './ActorCard';
-import { Link } from 'react-router-dom';
-import FeaturedCard from './FeaturedCard';
 
-const ActorList = ({ data }) => {
+const ActorList = () => {
   const [actors, setActors] = useState([]);
   useEffect(() => {
     const getData = async () => {

@@ -35,7 +35,6 @@ const StarWiki = (props) => {
           },
         }
       );
-      console.log(req.data.cast[0]);
       setMovies(req.data.cast);
     };
     getMovies();

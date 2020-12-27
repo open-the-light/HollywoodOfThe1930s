@@ -26,7 +26,10 @@ const FeaturedMovieCard = ({ id }) => {
         <div className='card-content'>
           <Link
             className='title'
-            to={{ pathname: `/movies/${movie.link}`, state: { data: movie } }}
+            to={{
+              pathname: `/movies/${movie.tmdb_id}`,
+              state: { data: movie },
+            }}
           >
             {movie.title + ' (' + movie.year + ')'}
           </Link>
